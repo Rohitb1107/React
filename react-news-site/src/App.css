@@ -4,3 +4,44 @@
   padding: 0;
   font-family: "Raleway", sans-serif;
 }
+
+/* Navbar */
+.nav-div {
+  width: 100%;
+  background-color: aliceblue;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* position: fixed;
+  top: 0%; */
+}
+
+.site-logo {
+  margin-left: 8rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.ul-div ul {
+  display: flex;
+  gap: 1rem;
+  margin-left: 5rem;
+  font-size: 1.2rem;
+}
+
+.ul-div a:hover {
+  text-decoration: underline;
+}
+
+.ul-div a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Home CSS */
+
+.home-div {
+  margin: auto;
+  /* border: 1px solid black; */
+  /* text-align: center; */
+}
