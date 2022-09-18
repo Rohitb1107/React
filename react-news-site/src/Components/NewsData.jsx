@@ -2,18 +2,18 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 const NewsData = () => {
-  const [data, setData] = useState([]);
+  const [newsData, setNewsData] = useState([]);
 
-  const getData = () => {
-    axios
-      .get("http://hn.algolia.com/api/v1/search?query=react")
-      .then((res) => {
-        setData(res.data);
-        console.log(data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+  const API = "http://hn.algolia.com/api/v1/search?query=react";
+
+  const getData = async () => {
+    try {
+      const { data } = await axios.get(API);
+      setNewsData(data);
+      console.log(newsData);
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   useEffect(() => {
